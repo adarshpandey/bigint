@@ -1,15 +1,13 @@
-#include "BigInt.h"
+#include "BigInteger.h"
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main()
 {
   string str1,str2;
-  cout<<"Enter number a:";
   cin>>str1;
-  cout<<"Enter number b:";
   cin>>str2;
-  BigInteger a(str1),b(str2);
-  cout<<a.number<<" + "<<b.number<<" = ";
+  BigInt a(str1),b(str2);
   a.add(b);
   cout<<a.number<<"\n";
   return 0;
